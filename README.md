@@ -6,8 +6,7 @@
 ![Minecraft](https://img.shields.io/badge/minecraft-26.51%2B-green)
 ![License](https://img.shields.io/badge/license-GPL--3.0-lightgrey)
 
-A scheduled entity cleanup plugin for [Endstone](https://github.com/EndstoneMC/endstone) Minecraft Bedrock servers.
-It sends warnings before each cleanup, protects valuable items with a whitelist, and provides an in-game admin menu.
+Scheduled entity cleanup plugin for Endstone, reducing lag and improving server performance
 
 ## Features
 
