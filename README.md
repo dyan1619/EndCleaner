@@ -1,4 +1,4 @@
-# EndCleaner for Endstone
+# EndCleaner
 
 ![Version](https://img.shields.io/badge/version-1.0.0-orange)
 ![Endstone](https://img.shields.io/badge/endstone-0.11.11%2B-blue)
@@ -6,7 +6,8 @@
 ![Minecraft](https://img.shields.io/badge/minecraft-26.51%2B-green)
 ![License](https://img.shields.io/badge/license-GPL--3.0-lightgrey)
 
-Scheduled entity cleanup plugin for Endstone, reducing lag and improving server performance
+A scheduled entity cleanup plugin for [Endstone](https://github.com/EndstoneMC/endstone) Minecraft Bedrock servers.
+It sends warnings before each cleanup, protects valuable items with a whitelist, and provides an in-game admin menu.
 
 ## Features
 
@@ -68,7 +69,23 @@ Only the **console** and **players with OP** (`/op <name>`) can use the commands
 
 ### Admin menu
 
-Open it with `/endcleaner menu` (OP players only). The main menu contains:
+Open it with `/endcleaner menu` (OP players only).
+
+```
+┌──────────────────────────────┐
+│       EndCleaner Admin       │
+├──────────────────────────────┤
+│  [ Whitelist (n) ]           │  --> Add held item, add by ID, remove items
+│  [ Trash types to clear ]    │  --> Switch mode, add or remove actor types
+│  [ Settings ]                │  --> Auto-clearing, clear settings, messages
+│  [ Statistics ]              │  --> View and reset statistics
+│  [ Count trash ]             │  --> Count trash, no deletion
+│  [ Clear trash now ]         │  --> Clean immediately, with confirmation
+│  [ Reset ]                   │  --> Four reset options, with confirmation
+└──────────────────────────────┘
+```
+
+The main menu contains:
 
 - **Whitelist (n):** add the item you are holding, add an item by ID, or remove an item from the list.
 - **Trash types to clear:** view the trash types being cleaned. Switch between list mode and items-only mode, and add or remove actor types.
